@@ -1,0 +1,13 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('clonerepo') {
+            steps {
+              
+                git branch: 'main', url: 'https://github.com/Venky02189/Demo.git/'             
+            }
+
+        }
+    }
+}
